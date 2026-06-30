@@ -1,7 +1,7 @@
 {
-  "name": "react-seal-kit",
+  "name": "seal-kit",
   "version": "0.0.1",
-  "description": "Generate Japanese electronic seals (はんこ/印鑑) with React + Konva",
+  "description": "Generate Japanese electronic seals (はんこ/印鑑) — React, Vue, vanilla JS",
   "license": "MIT",
   "keywords": [
     "seal",
@@ -9,13 +9,15 @@
     "inkan",
     "japanese",
     "react",
+    "vue",
     "konva",
-    "canvas"
+    "canvas",
+    "stamp"
   ],
-  "homepage": "https://github.com/sealkit/react-seal-kit",
+  "homepage": "https://github.com/FollowDreams12/seal-kit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sealkit/react-seal-kit"
+    "url": "https://github.com/FollowDreams12/seal-kit"
   },
   "type": "module",
   "main": "./src/index.ts",

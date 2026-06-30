@@ -1,7 +1,9 @@
-# react-seal-kit
+# seal-kit
 
-Generate Japanese electronic seals (はんこ / 印鑑) with React. Built on Konva Canvas for high-quality PNG export.
+Generate Japanese electronic seals (はんこ / 印鑑) in the browser. Built on Konva Canvas for high-quality PNG export.
 
+> Currently supports React. Vue & vanilla JS coming soon.
+>
 > 👉 **Live demo**: [sealkit.app](https://sealkit.app) — 無料で電子印鑑を作成・ダウンロード
 
 ## Features
@@ -15,15 +17,15 @@ Generate Japanese electronic seals (はんこ / 印鑑) with React. Built on Kon
 ## Install
 
 ```bash
-npm install react-seal-kit konva react-konva
+npm install seal-kit konva react-konva
 ```
 
-> `konva` and `react-konva` are peer dependencies.
+> `konva` and `react-konva` are peer dependencies (for React. Vanilla JS support coming soon).
 
 ## Quick Start
 
 ```tsx
-import { SealCanvas, registerFont } from "react-seal-kit";
+import { SealCanvas, registerFont } from "seal-kit";
 
 // Optional: register custom fonts
 registerFont({ family: "Noto Serif JP", google: true });
@@ -45,7 +47,7 @@ function App() {
 
 ```tsx
 import { useRef } from "react";
-import { SealCanvas, type SealCanvasRef } from "react-seal-kit";
+import { SealCanvas, type SealCanvasRef } from "seal-kit";
 
 function App() {
   const ref = useRef<SealCanvasRef>(null);
@@ -120,7 +122,7 @@ interface SealCanvasRef {
 ### Font Management
 
 ```ts
-import { registerFont, loadFont } from "react-seal-kit";
+import { registerFont, loadFont } from "seal-kit";
 
 // Google Fonts (built-in map includes 30+ Japanese fonts)
 registerFont({ family: "Noto Serif JP", google: true });
@@ -137,7 +139,7 @@ await loadFont("Noto Serif JP");
 
 ## Japanese Font Support
 
-The package includes a built-in Google Fonts map with 30+ Japanese fonts:
+Built-in Google Fonts map with 30+ Japanese fonts:
 
 | Category | Fonts |
 |----------|-------|
@@ -146,6 +148,14 @@ The package includes a built-in Google Fonts map with 30+ Japanese fonts:
 | Handwriting | Potta One, Klee One, Yusei Magic, Zen Kurenaido |
 | Display | Dela Gothic One, DotGothic16, Kaisei Decol, RocknRoll One |
 | Maru Gothic | Zen Maru Gothic, M PLUS Rounded 1c, Kiwi Maru, Kosugi Maru |
+
+## Roadmap
+
+- [x] React component (`<SealCanvas />`)
+- [ ] Vanilla JS API (`sealKit.render(element, options)`)
+- [ ] Vue component (`<SealCanvas />`)
+- [ ] SVG export
+- [ ] PDF export
 
 ## Related
 
