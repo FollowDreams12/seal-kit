@@ -1,0 +1,54 @@
+{
+  "name": "react-seal-kit",
+  "version": "0.0.1",
+  "description": "Generate Japanese electronic seals (はんこ/印鑑) with React + Konva",
+  "license": "MIT",
+  "keywords": [
+    "seal",
+    "hanko",
+    "inkan",
+    "japanese",
+    "react",
+    "konva",
+    "canvas"
+  ],
+  "homepage": "https://github.com/sealkit/react-seal-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sealkit/react-seal-kit"
+  },
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "development": "./src/index.ts",
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "konva": ">=10.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "react-konva": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "konva": "^10.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-konva": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
